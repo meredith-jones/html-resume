@@ -1,0 +1,35 @@
+body {
+    background-color: #6699ff;
+    background-size: cover;
+    text-align: left;
+    font-family: arial, helvetica;
+    padding: 15px;
+    }
+nav{
+    text-align: center;
+    }
+    
+li.mainnav{
+    display: inline;
+    padding: 8px;
+    background-color: #dddddd;
+    }
+h1{
+    font-size: 50px;
+    text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+    text-align: center;
+    }
+
+p{
+    font-size: 16px;
+    }
+a:link{
+    color: red; background-color:transparent; text-decoration:none
+    }
+a:hover{
+    color: rgb(164, 227, 104); background-color:transparent; text-decoration:bold
+    }
+
+h4{
+    text-align: center;
+    }
