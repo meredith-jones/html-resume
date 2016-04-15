@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Hot or Cold</title>
+  <style>
+  	body{
+  		background-color: #99CCFF;
+  		text-align: center;
+  		font-family: helvetica;
+  	}
+  </style>
+</head>
+
+<body>
+	<h1>Hot -or- Cold</h1>
+	<h4>*number guessing game*</h4>
+	<textarea name='comment' id='comment'></textarea>
+	<input type='submit' value='Submit' />
+  <script>
+
+function hotRcold(){
+	//can I make user guess into a function, that way I can push the first guess into the array??
+	var userGuess = Math.floor(prompt("I'm thinking of a number between 1-100. Guess my number!"));
+	var secretNum = Math.floor((Math.random() * 100) + 1);
+	var guessNum = 0;
+	var numsGuessed = [];
+	for (i = 1; i < 11; i++){
+		if(userGuess == secretNum){
+			alert(userGuess +" is correct! It only took " + (guessNum +1) + " tries! You guessed "+numsGuessed+".");
+			numsGuessed.push(userGuess);
+			break;
+		}
+		else if(userGuess < secretNum){
+			userGuess = Math.floor(prompt("Guess a higher number than "+userGuess +". You've made "+ (guessNum +1)+" guesses. You've guessed " +numsGuessed+ " thus far."));
+			guessNum +=1;
+			numsGuessed.push(userGuess);
+		}
+		else if(userGuess > secretNum){
+			userGuess = Math.floor(prompt("Guess a lower number than "+userGuess+". You've made "+ (guessNum +1)+" guesses. You've guessed " +numsGuessed+ " thus far."));
+			guessNum +=1;
+			numsGuessed.push(userGuess);
+		}
+		if (guessNum == 10){
+			alert("You've had enough guesses. Game over. You guessed "+numsGuessed+".");
+			break;
+		}	
+	} 
+}
+
+hotRcold()
+
+</script>
+
+</body>
+</html>
