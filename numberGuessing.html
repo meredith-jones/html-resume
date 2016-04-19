@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+console.log("Welcome to my guessing game. To guess a number, type 'userGuess=' and your number, and hit 'enter'. Then type 'submit()' and hit 'enter' again.")
+var secretNum = Math.floor((Math.random() * 100) + 1);
+//console.log(secretNum);
+var userGuess = undefined;
+var numsGuessed = [];
+var guessNum = 0;
+var guessesLeft = 10;
+function submit(){
+	var difference = Math.abs(userGuess - secretNum);
+    if(guessNum == 10){
+        console.log("You've had enough guesses. Game over. Press 'ctrl + r' to play again.");
+    }
+    //why is this accepting booleans?!?!?!?!?!?!?!?
+    if(isNaN(userGuess)){
+        console.log("Please enter a numeric value. Type 'userGuess=' and enter an integer, then hit 'enter'. Then type 'submit()' and hit 'enter' again.")
+    }
+    else if(userGuess == secretNum){
+        guessNum +=1;
+        guessesLeft -=1;
+        console.log(userGuess+" is right! You got it in "+guessNum+" tries!")
+	}
+	else if (difference <= 5){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You're hotter than a hot hot. You have "+guessesLeft+" guesses remaining.");
+	}
+	else if (difference <= 10){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You're quite hot. You have "+guessesLeft+" guesses remaining.");
+    }
+	else if (difference <= 15){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You are getting warmer. You have "+guessesLeft+" guesses remaining.");
+	}
+	else if(difference <= 20){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You are slightly warm. You have "+guessesLeft+" guesses remaining.");
+	}
+	else if(difference <= 25){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You are room temperature.  You have "+guessesLeft+" guesses remaining.");
+	}
+	else if(difference <=30){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You're cool. You have "+guessesLeft+" guesses remaining.");
+	}
+	else if(difference <=35){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You're cold. You have "+guessesLeft+" guesses remaining.");
+	}
+	else if(difference <=40){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You are very cold!! You have "+guessesLeft+" guesses remaining.");
+	}
+	else if(difference <=45){
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. Ice cold! You have "+guessesLeft+" guesses remaining.");
+	}
+	else{
+		guessNum +=1;
+        guessesLeft -=1;
+        numsGuessed.push(userGuess);
+        console.log("You have guessed "+numsGuessed+" so far. You're colder than a cold cold! You have "+guessesLeft+" guesses remaining.");
+	}
+}
+</script>
+
+    </body>
+</html>
