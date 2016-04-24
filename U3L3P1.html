@@ -1,0 +1,54 @@
+//unit 3, lesson 3, part 1
+<script>
+//Object creation: bracket notation
+var person = {
+	name: "Poops R. Snoops",
+	profession: "professional pooper",
+	gender: "male", 
+	age: 32,
+	sayNameAndProfession: function(){
+		return person.name + " is a "+ person.profession;
+	}
+}
+person.profession;
+person.name; 
+person.sayNameAndProfession();
+
+//Object creation: dot notation
+var person = {};
+user.name = "Poops R. Snoops";
+user.profession = "professional pooper";
+user.age = 32;
+
+
+
+// "in" operator --to determine if an object contains a specific property 
+if("name" in person){ // 'name' needs to be expressed as a string
+	console.log(true)
+}
+
+//looping through objects:
+	//looping through keys
+for(var prop in person){
+	console.log(prop)
+}
+	//looping through values
+for(var prop in person){
+	console.log(person[prop])
+}
+
+//Exercise: add a reset method 
+
+var user = {
+	name: "mr smith",
+	profession: "dandy fella",
+	age: 100000,
+	reset: function(){
+		for(var prop in user){
+			if(typeof user[prop] !== "function"){
+			user[prop] = undefined;
+			}
+		}
+	}
+}
+</script>
