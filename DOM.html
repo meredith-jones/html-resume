@@ -1,0 +1,57 @@
+<!--understanding the DOM-->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<div class="box">first</div>
+<div class="box">second</div>
+<form id="input-form">
+	<input id="input-field" type="text"/>
+	<button>Submit</button>
+</form>
+<ul id="list"></ul>
+
+<script>
+var box = document.getElementsByClassName('box');
+var form = document.getElementById("input-form");
+function getInput(event){
+	event.preventDefault();
+	var inputValue = document.getElementById("input-field").value
+	console.log(inputValue);
+	form.reset();
+	document.getElementById("list").innerHTML += "<li>" + inputValue + "</li>";
+}
+form.addEventListener("submit", //type of event
+	getInput, //function we want to launch when event is triggered
+	false);
+function removeListItem(e){
+	var target = e.target;
+	if(target.tagName !== 'LI'){
+		return undefined
+	}
+	target.parentNode.removeChild(target);
+}
+list.addEventListener('click', removeListItem);
+
+
+//assigns CSS properties
+box[0].style.height = "200px";
+box[0].style.width = "200px";
+box[0].style.background="orange";
+
+box[1].style.height = "200px";
+box[1].style.width = "200px";
+box[1].style.background="red";
+</script>
+
+
+</body>
+</html>
+
+<!--capturing input: form field has 3 parts: Form element, input element, and button element-->
+
+<!--need to select the form element in JS and store it as a variable using document.getElementById() -->
+
+
