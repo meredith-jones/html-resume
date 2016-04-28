@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		body{
+			background-image: url(http://i.imgur.com/bSXYeFm.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+    		background-color: #cccccc;
+			text-align: center;
+			font-family: Helvetica;
+		}
+
+		h1{
+			color: #00CED1;
+			text-shadow: 2px 2px 5px black, 2px 2px 5px black;
+		}
+		h2{
+			color: #00CED1;
+			text-shadow: 2px 2px 5px black, 2px 2px 5px black;
+		}
+		button{
+			margin: 0 auto;
+			margin-bottom: 10px;
+			font-size: 15px;
+			border-radius: 20px;
+		}
+		div.question{
+			background-color: #8FBC8F;
+			height: 125px;
+			width: 600px;
+			border-radius: 20px;
+			padding: 10px;
+			margin: 0 auto;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		div.results{
+			background-color: #8FBC8F;
+			height: 125px;
+			width: 600px;
+			border-radius: 20px;
+			padding: 10px;
+			margin: 0 auto;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		ul.choices{
+			background-color: #00CED1;
+			height: 250px
+			width: 550px;
+			border-radius: 20px;
+			font-size: 16px;
+			margin-top: 15px;
+			text-align: left;
+		}
+		div.userResult{
+			background-color: #00CED1;
+			height: 250px
+			width: 550px;
+			border-radius: 20px;
+			font-size: 16px;
+			margin-top: 15px;
+			text-align: center;
+		}
+	</style>
+	<title>Which Jungle Book Character are you?</title>
+</head>
+<body>
+
+<h1>Which Jungle Book character are you?</h1>
+<h2>Take this quiz and find out!</h2>
+<div class="question">
+Question 1: When waking up do you:
+	<ul class="choices">
+		<input type="radio" name="q1" value="a" id="q1a"><label for="q1a"> hit the snooze button before regaining consciousness</label><br/>
+		<input type="radio" name="q1" value="b" id="q1b"><label for="q1b"> look around and wonder where you are</label><br/>
+		<input type="radio" name="q1" value="c" id="q1c"><label for="q1c"> jump out of bed</label><br/>
+		<input type="radio" name="q1" value="d" id="q1d"><label for="q1d"> check facebook</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 2: When choosing a snack, your go-to is:
+	<ul class="choices">
+		<input type="radio" name="q2" value="a" id="q2a"><label for="q2a"> something nutty</label><br/>
+		<input type="radio" name="q2" value="b" id="q2b"><label for="q2b"> something sweet</label><br/>
+		<input type="radio" name="q2" value="c" id="q2c"><label for="q2c"> something salty</label><br/>
+		<input type="radio" name="q2" value="d" id="q2d"><label for="q2d"> MEAT</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 3: What is your favorite part of work?
+	<ul class="choices">
+		<input type="radio" name="q3" value="a" id="q3a"><label for="q3a"> 5 o'clock</label><br/>
+		<input type="radio" name="q3" value="b" id="q3b"><label for="q3b"> the meetings</label><br/>
+		<input type="radio" name="q3" value="c" id="q3c"><label for="q3c"> the part where you get a paycheck</label><br/>
+		<input type="radio" name="q3" value="d" id="q3d"><label for="q3d"> spreadsheets</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 4: What do you do for fun?
+	<ul class="choices">
+		<input type="radio" name="q4" value="a" id="q4a"><label for="q4a"> take quizzes such as this</label><br/>
+		<input type="radio" name="q4" value="b" id="q4b"><label for="q4b"> anything outside</label><br/>
+		<input type="radio" name="q4" value="c" id="q4c"><label for="q4c"> something creative</label><br/>
+		<input type="radio" name="q4" value="d" id="q4d"><label for="q4d"> video games</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 5: When in the shower do you...
+	<ul class="choices">
+		<input type="radio" name="q5" value="a" id="q5a"><label for="q5a"> get in, get out... let's not waste time and water</label><br/>
+		<input type="radio" name="q5" value="b" id="q5b"><label for="q5b"> take your sweet time. It is so relaxing!!</label><br/>
+		<input type="radio" name="q5" value="c" id="q5c"><label for="q5c"> I don't shower</label><br/>
+		<input type="radio" name="q5" value="d" id="q5d"><label for="q5d"> I shower, but I don't dry off.</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 6: When observing people...
+	<ul class="choices">
+		<input type="radio" name="q6" value="a" id="q6a"><label for="q6a"> I notice how they interact with other people</label><br/>
+		<input type="radio" name="q6" value="b" id="q6b"><label for="q6b"> I notice what they are wearing</label><br/>
+		<input type="radio" name="q6" value="c" id="q6c"><label for="q6c"> I notice how attractive they are</label><br/>
+		<input type="radio" name="q6" value="d" id="q6d"><label for="q6d"> I don't really notice other people</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 7: Your favorite dessert is:
+	<ul class="choices">
+		<input type="radio" name="q7" value="a" id="q7a"><label for="q7a"> ice cream</label><br/>
+		<input type="radio" name="q7" value="b" id="q7b"><label for="q7b"> MEAT</label><br/>
+		<input type="radio" name="q7" value="c" id="q7c"><label for="q7c"> chocolate</label><br/>
+		<input type="radio" name="q7" value="d" id="q7d"><label for="q7d"> candy</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 8: If you were elected president:
+	<ul class="choices">
+		<input type="radio" name="q8" value="a" id="q8a"><label for="q8a"> free college for everyone</label><br/>
+		<input type="radio" name="q8" value="b" id="q8b"><label for="q8b"> people should get what they work for</label><br/>
+		<input type="radio" name="q8" value="c" id="q8c"><label for="q8c"> I'd respectfully decline the election</label><br/>
+		<input type="radio" name="q8" value="d" id="q8d"><label for="q8d"> First priority: let's pay teachers more.</label><br/>
+	</ul>
+</div>
+<br>
+
+<div class="question">
+Question 9: Your dance style:
+	<ul class="choices">
+		<input type="radio" name="q9" value="a" id="q9a"><label for="q9a"> Freestyle! I just move with the music.</label><br/>
+		<input type="radio" name="q9" value="b" id="q9b"><label for="q9b"> Solo and structured - ballet, tap, jazz, something with steps</label><br/>
+		<input type="radio" name="q9" value="c" id="q9c"><label for="q9c"> Ballroom - structured and with a partner</label><br/>
+		<input type="radio" name="q9" value="d" id="q9d"><label for="q9d"> West Coast or Lindy - with a partner, but less structured</label><br/>
+	</ul>
+</div> 
+<br>
+
+<div class="question">
+Question 10 - Final Question: Your karaoke style:
+	<ul class="choices">
+		<input type="radio" name="q10" value="a" id="q10a"><label for="q10a"> I only karaoke drunk.</label><br/>
+		<input type="radio" name="q10" value="b" id="q10b"><label for="q10b"> I take my performance very seriously.</label><br/>
+		<input type="radio" name="q10" value="c" id="q10c"><label for="q10c"> I don't karaoke, but I will spectate.</label><br/>
+		<input type="radio" name="q10" value="d" id="q10d"><label for="q10d"> I don't karaoke, and I'll pay you to stop singing.</label><br/>
+	</ul>
+</div>
+<br>
+
+<button>Submit</button>
+<br>
+
+<div class="results">
+	After thorough analysis, it is determined that you are:
+	<div class="userResult">
+		(Return character with highest number)
+	</div>
+</div>
+
+
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
